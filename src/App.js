@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import Header from "./components/Header";
 import Tasks from "./components/Tasks";
 import AddTask from "./components/AddTask";
+import Footer from "./components/Footer";
 
 const App = () => {
   const [showAddTask, setShowAddTask] = useState(false);
@@ -103,6 +104,7 @@ const App = () => {
         "No Tasks To Show"
       )}
       {/* if `tasks.length` is greater than `0` then show `<Tasks />` else show `"No Tasks To Show"` */}
+      <Footer />
     </div>
   );
 };
